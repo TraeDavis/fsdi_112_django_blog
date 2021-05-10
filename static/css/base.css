@@ -1,17 +1,36 @@
 body {
     font-family: 'Merriweather', serif;
     font-size: 18px;
+    background-color:  rgba(0, 0, 0, 0.979);
     
 }
+.row{
+    align-items: baseline;
+}
 header {
-    border-bottom: 1px solid #999;
     margin-bottom: 2rem;
     display: flex;
+    flex-direction: column;
 }
 
 header h1 a {
-    color: red;
+    color: rgb(217, 217, 217);
     text-decoration: none;              
+}
+header h1 a:hover{
+    color: rgb(28,154,232);
+} 
+.user-welcome{
+    color: rgb(236, 233, 233);
+}
+.navbar{
+    margin-top: 2rem;
+    border: 1px solid rgb(47, 51, 54);
+    padding: 0;
+    
+}
+.navbar-nav{
+    display: flex;
 }
 .nav-left{
     margin-right: auto;
@@ -20,22 +39,46 @@ header h1 a {
     display: flex;
     padding-top: 2rem;
 }
-.post-entry{
-    margin-bottom: 2rem;
+.bg-dark{
+    background-color: rgba(0, 0, 0, 0.911)!important;
 }
-.post-entry h2{
+.nav-item{
+    padding-left: .25rem;
+    padding: 0 .5rem;
+}
+.nav-link{
+    color: rgb(101,108,115);
+}
+.nav-link.active{
+    color: rgb(28,154,232)!important;
+    border-bottom: 2px solid rgb(28,154,232);
+}
+.nav-link:hover{
+    color: rgb(28,154,232)!important;
+    background-color: rgba(0, 88, 252, 0.233);
+}
+.post-entry{
+    padding: 2rem;
+    border: 1px solid rgb(47, 51, 54);
+}
+.post-entry h4{
     margin:0.5rem 0;
 }
-.post-entry h2 a,
-.post-entry h2 a:visited{
-    color: blue;
+.post-entry h4 a,
+.post-entry h4 a:visited{
+    color:rgb(217, 217, 217) ;
     text-decoration: none;
 }
 .post-entry p{
     margin: 0;
     font-weight: 400;
+    color: rgb(110, 118, 125);
 }
-.post-entry h2 a:hover{
-    color: red;
+.post-entry h4 a:hover{
+    color: rgb(28,154,232);
 }
 
+.btn-primary{
+    background-color: rgb(13, 153, 240);
+    border-color: rgb(19, 152, 235);
+}
