@@ -2,7 +2,9 @@ body {
     font-family: 'Merriweather', serif;
     font-size: 18px;
     background-color:  rgba(0, 0, 0, 0.979);
-    
+}
+.col-6{
+    color:rgb(217, 217, 217);
 }
 .row{
     align-items: baseline;
