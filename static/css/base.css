@@ -36,6 +36,7 @@ header h1 a:hover{
 }
 .nav-left{
     margin-right: auto;
+    border-bottom: 1px solid rgb(28,154,232);
 }
 .nav-right{
     display: flex;
@@ -59,23 +60,41 @@ header h1 a:hover{
     color: rgb(28,154,232)!important;
     background-color: rgba(0, 88, 252, 0.233);
 }
-.post-entry{
+.post-entry,
+.top-margin{
+    margin-top: 5%;
+}
+.border-template h2,
+.border-template h1{
+    color: rgb(28,154,232);
+    margin-bottom: 4%;
+    border-bottom:1px solid rgb(28,154,232);
+}
+
+.post-entry-list,
+.post-entry,
+.border-template{
     padding: 2rem;
     border: 1px solid rgb(47, 51, 54);
 }
+.post-entry-list h4,
 .post-entry h4{
     margin:0.5rem 0;
 }
-.post-entry h4 a,
+.post-entry-list h4 a,
+.post-entry,
+.post-entry-list h4 a:visited,
 .post-entry h4 a:visited{
     color:rgb(217, 217, 217) ;
     text-decoration: none;
 }
+.post-entry-list p,
 .post-entry p{
     margin: 0;
     font-weight: 400;
     color: rgb(110, 118, 125);
 }
+.post-entry-list h4 a:hover,
 .post-entry h4 a:hover{
     color: rgb(28,154,232);
 }

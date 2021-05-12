@@ -28,7 +28,7 @@
     </div>
   </nav>
     {% for post in object_list %}
-    <div class="post-entry">
+    <div class="post-entry-list">
         <h4>
             <a href="{% url 'post_detail' post.pk %}">{{ post.title }}</a>
         </h4>
