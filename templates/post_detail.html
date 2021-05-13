@@ -3,8 +3,15 @@
 {% block content %}
 <div class="post-entry">
     <h2>{{ post.title }}</h2>
+    <p>Posted by: {{ post.author }}</p>
     <p>{{ post.body }}</p>
+    {% if user == post.author %}
     <a href="{% url 'post_edit' post.pk %}" class="btn btn-primary mt-3">+ Edit Blog Post</a>
     <a href="{% url 'post_delete' post.pk %}" class="btn btn-primary ms-3 mt-3">- Delete Blog Post</a>
+    {% else %}
+    <!-- only let the author edit or delete post -->
+    <!-- Send them back to home page -->
+    <a href="{% url 'home' %}" class="btn btn-primary mt-3">Back to home page</a>
+    {% endif %}
 </div>
 {% endblock content %}

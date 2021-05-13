@@ -80,6 +80,7 @@ header h1 a:hover{
 .post-entry-list h4,
 .post-entry h4{
     margin:0.5rem 0;
+    text-transform: capitalize;
 }
 .post-entry-list h4 a,
 .post-entry,
